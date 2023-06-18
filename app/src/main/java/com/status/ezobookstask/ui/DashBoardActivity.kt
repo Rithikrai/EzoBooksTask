@@ -47,7 +47,7 @@ class DashBoardActivity : AppCompatActivity() {
     fun validateUser() {
 
         RetrofitClient.instance.login(
-            1
+            10
         )?.enqueue(object :
             Callback,
             retrofit2.Callback<PicsumModelResponse?> {
